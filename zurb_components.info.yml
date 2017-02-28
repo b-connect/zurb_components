@@ -1,0 +1,5 @@
+name: Zurb Components
+type: module
+description: Zurb components
+core: 8.x
+package: zurb

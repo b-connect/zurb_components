@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains zurb_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zurb_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zurb_components module.
+    case 'help.page.zurb_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Zurb components') . '</p>';
+      return $output;
+
+    default:
+  }
+}
